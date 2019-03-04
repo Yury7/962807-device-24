@@ -13,44 +13,46 @@
   <!--  -->
   <!-----------------------------------Шапка------------------------------------->
   <!--  -->
-  <header class="main-headline catalog-headline" id="header">
-    <h1 class="visually-hidden">DEVICE интернет-магазин гаджетов</h1>
-    <a href="index.html"><img class="header-logo" src="img/logo.svg" alt="DEVICE интернет-магазин гаджетов" width="163" height="35"></a>
-    <div class="box-user">
-      <form class="search" method="get" action="https://echo.htmlacademy.ru">
-        <input class="search-input" id="search-fld" type="search" name="search" placeholder="Поиск по сайту" required>
-        <button class="search-btn " type="submit">Найти</button>
-        <label class="search-lab" for="search-fld"><span class="visually-hidden">Поиск:</span></label>
-      </form>
-      <div class="box-user-inner">
-        <a class="login" href="#">Валентин Петухов</a>
-        <a class="log-out" href="#">Выйти</a>
-        <div class="box-user-purchase">
-          <a class="compare" href="#">Сравнить</a>
-          <a class="cart" href="#">Корзина</a>
-        </div>
-      </div>
-    </div>
-    <div class="box-nav">
-      <nav class="main-nav">
-        <h2 class="main-nav-header">Каталог товаров</h2>
-        <div class="main-nav-box">
-          <ul class="main-nav-list">
-            <li class="main-nav-item"><a href="#">Виртуальная реальность</a></li>
-            <li class="main-nav-item"><a href="#">Моноподы для селфи</a></li>
-            <li class="main-nav-item"><a href="#">Экшн-камеры</a></li>
-            <li class="main-nav-item"><a href="#">Фитнес-браслеты</a></li>
-            <li class="main-nav-item"><a href="#">Умные часы</a></li>
-            <li class="main-nav-item"><a href="#">Квадрокоптеры</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="box-serv">
-        <a class="box-serv-deliver" href="index.html#serv">Доставка</a>
-        <a class="box-serv-warranty" href="index.html#serv">Гарантия</a>
-        <a class="box-serv-contacts" href="index.html#contacts">Контакты</a>
-      </div>
-    </div>
+  <header class="main-headline" id="header">
+   <div class="container container-headline catalog-headline">
+      <h1 class="visually-hidden">DEVICE интернет-магазин гаджетов</h1>
+     <a href="index.html"><img class="header-logo" src="img/logo.svg" alt="DEVICE интернет-магазин гаджетов" width="163" height="35"></a>
+     <div class="box-user">
+       <form class="search" method="get" action="https://echo.htmlacademy.ru">
+         <input class="search-input" id="search-fld" type="search" name="search" placeholder="Поиск по сайту" required>
+         <button class="search-btn " type="submit">Найти</button>
+         <label class="search-lab" for="search-fld"><span class="visually-hidden">Поиск:</span></label>
+       </form>
+       <div class="box-user-inner">
+         <a class="login" href="#">Валентин Петухов</a>
+         <a class="log-out" href="#">Выйти</a>
+         <div class="box-user-purchase">
+           <a class="compare" href="#">Сравнить</a>
+           <a class="cart" href="#">Корзина</a>
+         </div>
+       </div>
+     </div>
+     <div class="box-nav">
+       <nav class="main-nav">
+         <h2 class="main-nav-header">Каталог товаров</h2>
+         <div class="main-nav-box">
+           <ul class="main-nav-list">
+             <li class="main-nav-item"><a href="#">Виртуальная реальность</a></li>
+             <li class="main-nav-item"><a href="#">Моноподы для селфи</a></li>
+             <li class="main-nav-item"><a href="#">Экшн-камеры</a></li>
+             <li class="main-nav-item"><a href="#">Фитнес-браслеты</a></li>
+             <li class="main-nav-item"><a href="#">Умные часы</a></li>
+             <li class="main-nav-item"><a href="#">Квадрокоптеры</a></li>
+           </ul>
+         </div>
+       </nav>
+       <div class="box-serv">
+         <a class="box-serv-deliver" href="index.html#serv">Доставка</a>
+         <a class="box-serv-warranty" href="index.html#serv">Гарантия</a>
+         <a class="box-serv-contacts" href="index.html#contacts">Контакты</a>
+       </div>
+     </div>
+   </div>
   </header>
   <main class="catalog">
     <!-- ----------------------------Хлебные крошки---------------------------- -->
@@ -59,8 +61,8 @@
       <section class="breadcrumbs">
         <ul>
           <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
-          <li class="breadcrumbs-item"><span>Каталог товаров</span></li>
-          <li class="breadcrumbs-item"><span>Моноподы для селфи</span></li>
+          <li class="breadcrumbs-item"><a href="#">Каталог товаров</a></li>
+          <li class="breadcrumbs-item"><a href="catalog.html">Моноподы для селфи</a></li>
         </ul>
       </section>
     </div>
@@ -210,13 +212,13 @@
         </section>
         <!-- ================Пагинация==================== -->
         <div class="pagination">
-          <button class="pagination-btn pagination-btn-back">НАЗАД</button>
+          <a class="pagination-btn pagination-btn-back" href="#"><span>НАЗАД</span></a>
           <ul class="pagination-list">
             <li class="pagination-item pagination-item-active"><a href="#">1</a></li>
             <li class="pagination-item"><a href="#">2</a></li>
             <li class="pagination-item"><a href="#">3</a></li>
           </ul>
-          <button class="pagination-btn pagination-btn-forward">ВПЕРЕД</button>
+          <a class="pagination-btn pagination-btn-forward" href="#"><span>ВПЕРЕД</span></a>
         </div>
       </div>
     </div>
@@ -259,7 +261,7 @@
             </a>
           </li>
         </ul>
-        <a class="copy" href="https://htmlacademy.ru/"><img class="web-dev-logo" src="img/logo-html.svg" alt="Разработано: HTML Academy" width="27" height="34"></a>
+        <a class="copy" href="https://htmlacademy.ru/intensive/htmlcss"><img class="web-dev-logo" src="img/logo-html.svg" alt="Разработано: HTML Academy" width="27" height="34"></a>
       </div>
     </div>
   </footer>
