@@ -470,6 +470,7 @@ main,
   background-color: transparent;
   cursor: pointer;
   z-index: 1;
+  outline:none;
 }
 
 .search-input:required{
@@ -1050,9 +1051,6 @@ dt{
   min-width: 760px;
   min-height: 194px;
   margin: 25px 0px 76px 116px;
-/*  margin-top: 28px;
-  margin-left: 116px;
-  margin-bottom: 76px;*/
 }
 
 .services-desc section{
@@ -1591,6 +1589,8 @@ footer a{
 .container-main{
   display: flex;
   justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
 }
 /*-------------------хлебные крошки-------------*/
 .catalog-title{
@@ -1655,6 +1655,7 @@ footer a{
   content: "";
   width: 0px;
   height: 0px;
+  border: 0px;
 }
 
 /*------------------------Список товаров----------------*/
@@ -1774,18 +1775,23 @@ footer a{
   flex-wrap: wrap;
   width: 780px;
   padding-right: 20px;
+  padding-top: 49px;
 }
-
+.container-sorting{
+  background-color: #ebebeb;
+  margin: 0 auto;
+}
 .sorting{
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   position: relative;
   box-sizing: border-box;
-  width: 780px;
+  width: 1160px;
   min-height: 70px;
-  padding-top: 20px;
-  margin-bottom: 49px;
+  padding-top: 21px;
+  padding-left: 381px;
+  margin: 0px auto;
   background-color: #ebebeb;
 }
 
@@ -1827,28 +1833,6 @@ footer a{
   height: 10px;
   margin: 10px 0px 10px 19px;
 }
-
-/*.sorting::before{
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100vw;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.08);
-  z-index: -1;
-}
-
-.sorting::after{
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 100vw;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.08);
-  z-index: -1;
-}*/
 
 .type-item a{
   opacity: 0.3;
@@ -1948,9 +1932,26 @@ footer a{
 }
 
 .item-filter h2{
-  font-size: 16px;
+  position: absolute;
+  box-sizing: border-box;
+  min-height: 70px;
   margin: 0px;
-  padding: 22px 28px 22px 60px;
+  padding-top: 23px;
+  padding-right: 178.5px;
+  top: -70px;
+  left: 80px;
+  z-index: 1;
+  font-size: 16px;
+}
+.item-filter h2::after{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100vw;
+  height: 100%;
+  background-color: #dcdcdc;
+  z-index: -1;
 }
 
 .item-form{

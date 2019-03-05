@@ -62,10 +62,39 @@
         <ul>
           <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
           <li class="breadcrumbs-item"><a href="#">Каталог товаров</a></li>
-          <li class="breadcrumbs-item"><a href="catalog.html">Моноподы для селфи</a></li>
+          <li class="breadcrumbs-item"><a>Моноподы для селфи</a></li>
         </ul>
       </section>
     </div>
+          <!-- ----------------------------Сортировка---------------------------- -->
+      <div class="container-sorting">
+          <section class="sorting">
+            <h2 class="sorting-title">Сортировка:</h2>
+            <ul class="sorting-type">
+              <li class="type-item type-item-active">
+                <a href="#">По цене</a>
+              </li>
+              <li class="type-item">
+                <a href="#">По типу</a>
+              </li>
+              <li class="type-item">
+                <a href="#">По популярности</a>
+              </li>
+            </ul>
+            <ul class="sorting-order">
+              <li class="order-item order-item-active">
+                <a class="order-up" href="#">
+                  <span class="visually-hidden">По возрастанию</span>
+                </a>
+              </li>
+              <li class="order-item">
+                <a class="order-down" href="#">
+                  <span class="visually-hidden">По убыванию</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
     <!-- ----------------------------Фильтр товаров---------------------------- -->
     <div class="container container-main">
       <section class="item-filter">
@@ -128,37 +157,9 @@
           <button class="item-form-btn" type="submit">Показать</button>
         </form>
       </section>
-      <!-- ----------------------------Сортировка---------------------------- -->
-      <div class="container-goods">
-        <div class="container-sorting">
-          <section class="sorting">
-            <h2 class="sorting-title">Сортировка:</h2>
-            <ul class="sorting-type">
-              <li class="type-item type-item-active">
-                <a href="#">По цене</a>
-              </li>
-              <li class="type-item">
-                <a href="#">По типу</a>
-              </li>
-              <li class="type-item">
-                <a href="#">По популярности</a>
-              </li>
-            </ul>
-            <ul class="sorting-order">
-              <li class="order-item order-item-active">
-                <a class="order-up" href="#">
-                  <span class="visually-hidden">По возрастанию</span>
-                </a>
-              </li>
-              <li class="order-item">
-                <a class="order-down" href="#">
-                  <span class="visually-hidden">По убыванию</span>
-                </a>
-              </li>
-            </ul>
-          </section>
-        </div>
+
         <!-- ----------------------------Список товаров---------------------------- -->
+      <div class="container-goods">
         <section class="items">
           <h2 class="visually-hidden">Список товаров</h2>
           <ul class="items-list">
@@ -210,7 +211,7 @@
             </li>
           </ul>
         </section>
-        <!-- ================Пагинация==================== -->
+<!-- ============================Пагинация==================== -->
         <div class="pagination">
           <a class="pagination-btn pagination-btn-back" href="#"><span>НАЗАД</span></a>
           <ul class="pagination-list">
