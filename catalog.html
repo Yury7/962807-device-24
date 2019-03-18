@@ -13,7 +13,7 @@
   <header class="main-headline" id="header">
     <div class="container container-headline catalog-headline">
       <h1 class="visually-hidden">DEVICE интернет-магазин гаджетов</h1>
-      <a href="index.html"><img class="header-logo" src="img/logo.svg" alt="DEVICE интернет-магазин гаджетов" width="163" height="35"></a>
+      <a class="header-logo" href="index.html"><img src="img/logo.svg" alt="DEVICE интернет-магазин гаджетов" width="163" height="35"></a>
       <div class="box-user">
         <form class="search" method="get" action="https://echo.htmlacademy.ru">
           <input class="search-input" id="search-fld" type="search" name="search" placeholder="Поиск по сайту" required>
@@ -31,7 +31,7 @@
       </div>
       <div class="box-nav">
         <nav class="main-nav">
-          <h2 class="main-nav-header">Каталог товаров</h2>
+          <h2 class="main-nav-header"><a href="#">Каталог товаров</a></h2>
           <ul class="main-nav-list">
             <li class="main-nav-item">
               <a href="#">Виртуальная реальность</a>
@@ -59,10 +59,10 @@
     <div class="container">
       <h2 class="catalog-title">Моноподы для селфи</h2>
       <section class="breadcrumbs">
-        <ul>
+        <ul class="breadcrumbs-list">
           <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
           <li class="breadcrumbs-item"><a href="#">Каталог товаров</a></li>
-          <li class="breadcrumbs-item"><a>Моноподы для селфи</a></li>
+          <li class="breadcrumbs-item breadcrumbs-item-active"><a>Моноподы для селфи</a></li>
         </ul>
       </section>
     </div>
@@ -71,7 +71,7 @@
         <h2 class="sorting-title">Сортировка:</h2>
         <ul class="sorting-type">
           <li class="type-item type-item-active">
-            <a href="#">По цене</a>
+            <a>По цене</a>
           </li>
           <li class="type-item">
             <a href="#">По типу</a>
@@ -82,7 +82,7 @@
         </ul>
         <ul class="sorting-order">
           <li class="order-item order-item-active">
-            <a class="order-up" href="#">
+            <a class="order-up">
               <span class="visually-hidden">По возрастанию</span>
             </a>
           </li>
@@ -209,7 +209,7 @@
         <div class="pagination">
           <a class="pagination-btn pagination-btn-back" href="#"><span>НАЗАД</span></a>
           <ul class="pagination-list">
-            <li class="pagination-item pagination-item-active"><a href="#">1</a></li>
+            <li class="pagination-item pagination-item-active"><a>1</a></li>
             <li class="pagination-item"><a href="#">2</a></li>
             <li class="pagination-item"><a href="#">3</a></li>
           </ul>
@@ -218,7 +218,7 @@
       </div>
     </div>
   </main>
-  <footer>
+  <footer class="main-ftr">
     <div class="box-ftr">
       <div class="box-ftr-1">
         <a class="footer-logo" href="#header"><img src="img/logo-ftr.svg" alt="DEVICE интернет-магазин гаджетов" width="163" height="35"></a>
